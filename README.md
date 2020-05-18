@@ -31,8 +31,8 @@ bem bolada, fazendo o aluno assimilar os conceitos de forma bem didática e natu
 Intro to flutter - clique [aqui](https://www.appbrewery.co/p/intro-to-flutter) para saber mais.
 
 # Quem sou eu?
-> Murillo Cesar Bianconi
+> [Murillo Cesar Bianconi](https://mcbianconi.github.io/)
 
-Você pode me achar nas redes sociais como @mcbianconi ou através do meu [email](mailto:murillo.bianconi@gmail.com)
+Você também pode me achar nas redes sociais como @mcbianconi ou através do meu [email](mailto:murillo.bianconi@gmail.com)
 
 ![End Banner](https://github.com/mcbianconi/images/blob/master/readme-footer.png)
