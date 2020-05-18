@@ -1,16 +1,23 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
   return runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        appBar: AppBar(
-          title: Text('Dicee'),
-          backgroundColor: Colors.red,
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: Color(0xffCA035C),
+          appBar: AppBar(
+            title: Text(
+              'Click to roll',
+              style: TextStyle(color: Color(0xffCA035C)),
+            ),
+            backgroundColor: Colors.white,
+          ),
+          body: DicePage(),
         ),
-        body: DicePage(),
       ),
     ),
   );
@@ -23,20 +30,41 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: FlatButton(
-              child: Image.asset('images/dice3.png'),
-              onPressed: () {
-                print("clicouuuu");
-              },
-            ),
+            child: Dice(),
           ),
           Expanded(
-            child: FlatButton(
-              child: Image.asset('images/dice5.png'),
-              onPressed: () {},
-            ),
+            child: Dice(),
           )
         ],
+      ),
+    );
+  }
+}
+
+class Dice extends StatefulWidget {
+  @override
+  _DiceState createState() => _DiceState();
+}
+
+class _DiceState extends State<Dice> {
+  int number = roll();
+
+  static int roll() {
+    return Random().nextInt(6) + 1;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 200),
+      child: FlatButton(
+        key: ValueKey<int>(number),
+        child: Image.asset('images/dice$number.png'),
+        onPressed: () {
+          setState(() {
+            number = roll();
+          });
+        },
       ),
     );
   }
