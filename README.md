@@ -12,13 +12,15 @@ bastante proveitosa para incentivar o andamento do curso.
 
 Se quiser ver a parte 1, clique [aqui](https://github.com/mcbianconi/mi-card).
 
-## Conteúdo
+## O App
 Nesse módulo, além de revisões, foi apresentado o conceito de Stateful Widget ao propor um app que
 simula a rolagem de 2 dados na tela.
 
 Como o foco desse módulo foi apresentar a sistemática de estado de aplicação e revisar como
-funciona a "mágica" de hot-reload, a interface é bem simples, mas a construção do app divertida e 
+funciona a "mágica" de hot-reload, a interface é bem simples, mas a construção do app divertida e
 bem bolada, fazendo o aluno assimilar os conceitos de forma bem didática e natural.
+
+![print](https://github.com/mcbianconi/images/blob/master/dicee-app.png)
 
 ## Todo
 - [x] Adicionar animação nos dados
